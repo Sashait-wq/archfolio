@@ -44,4 +44,8 @@
       transform: scaleX(1);
     }
   }
+
+  &__nav-link-active {
+    color: var(--t-color-b);
+  }
 }
