@@ -19,7 +19,7 @@ export class BaseService {
   }
 
   public post(data: any): Observable<any> {
-    console.warn('POST does not working with assets/');
+    console.warn('POST is disabled: working with static mock data from assets.');
     return of(data).pipe(catchError(this.handleError));
   }
 }
