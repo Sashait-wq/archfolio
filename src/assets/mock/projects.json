@@ -1,0 +1,88 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "Minimalist Residential Tower",
+      "description": "A luxurious minimalist villa designed with a balance of open space, light, and natural materials. Located in the hills with a panoramic view.",
+      "image": "assets/images/projects/project1.jpg",
+      "details": {
+        "location": "Kyoto, Japan",
+        "year": "2022",
+        "client": "Private Owner",
+        "architect": "ArchiNova Studio",
+        "style": "Minimalism, Sustainable",
+        "fullDescription": "This residential tower stands as a symbol of elegant minimalism in the heart of the Japanese hills. Designed to merge indoor and outdoor spaces with floor-to-ceiling windows and eco-friendly materials, it prioritizes simplicity and balance. Solar panels and smart ventilation make it energy efficient while maintaining breathtaking views."
+      }
+    },
+    {
+      "id": "2",
+      "title": "Downtown Glass Skyscraper",
+      "description": "An innovative office building with a fully glass façade, promoting transparency and collaboration between teams.",
+      "image": "assets/images/projects/project2.jpg",
+      "details": {
+        "location": "Toronto, Canada",
+        "year": "2021",
+        "client": "GlobalTech Inc.",
+        "architect": "Skyline Architecture Group",
+        "style": "High-Tech, Corporate",
+        "fullDescription": "This 40-story skyscraper redefines the urban skyline. Its reflective glass façade is both aesthetic and functional, enhancing natural light and reducing heat absorption. The building hosts co-working zones, eco terraces, and smart meeting pods for hybrid teams. LEED Platinum certified."
+      }
+    },
+    {
+      "id": "3",
+      "title": "Urban Conference Hall",
+      "description": "A multifunctional event space in the heart of the city with acoustic optimization, modern style, and eco-friendly solutions.",
+      "image": "assets/images/projects/project3.jpg",
+      "details": {
+        "location": "Berlin, Germany",
+        "year": "2020",
+        "client": "City Council of Berlin",
+        "architect": "BauForm Lab",
+        "style": "Contemporary, Brutalist",
+        "fullDescription": "Designed for flexibility, this hall can host conferences, exhibitions, and concerts. The concrete exterior is softened by large glass panels and living plant walls. Acoustic panels and movable walls allow for multiple spatial configurations. Energy use is optimized through geothermal heating."
+      }
+    },
+    {
+      "id": "4",
+      "title": "Futuristic Business Center",
+      "description": "A curved architectural marvel designed to host startups and innovation labs. It combines aesthetics with cutting-edge engineering.",
+      "image": "assets/images/projects/project4.jpg",
+      "details": {
+        "location": "Dubai, UAE",
+        "year": "2023",
+        "client": "Innovation Hub ME",
+        "architect": "Morphogen Architects",
+        "style": "Futurism, Parametric Design",
+        "fullDescription": "This project serves as a landmark for innovation. Its biomorphic shape symbolizes fluidity and movement, echoing the creative energy of the businesses inside. Wind tunnel tested and equipped with AI-powered energy systems, it's one of the most technologically advanced buildings in the region."
+      }
+    },
+    {
+      "id": "5",
+      "title": "Elevated City Library",
+      "description": "A transparent public library raised above the street level to preserve ground-level green space and enhance urban flow.",
+      "image": "assets/images/projects/project5.jpg",
+      "details": {
+        "location": "Oslo, Norway",
+        "year": "2019",
+        "client": "City of Oslo",
+        "architect": "NordArk",
+        "style": "Scandinavian Modern",
+        "fullDescription": "Suspended above street level, this library opens views to the fjord and cityscape. Natural wood and neutral tones dominate the interiors. Reading zones are complemented by rooftop gardens and sound-insulated study pods. The design encourages openness and community learning."
+      }
+    },
+    {
+      "id": "6",
+      "title": "Concrete Cliff Retreat",
+      "description": "A private retreat built into a rocky hillside, blending brutalist architecture with panoramic nature views.",
+      "image": "assets/images/projects/project6.jpg",
+      "details": {
+        "location": "Santorini, Greece",
+        "year": "2022",
+        "client": "Art Collector's Estate",
+        "architect": "K-Studio",
+        "style": "Brutalist / Natural Integration",
+        "fullDescription": "Built directly into the cliff, this retreat uses raw concrete, stone, and glass to create a seamless dialogue with its environment. The structure is self-sufficient with rainwater harvesting and solar power. It houses a private gallery, infinity pool, and meditation terrace overlooking the sea."
+      }
+    }
+  ]
+}

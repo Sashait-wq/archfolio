@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "title": "Project",
+    "subtitle": "Lorum",
+    "image": "assets/images/projects/project1.jpg",
+    "buttonLabel": "Explore Projects",
+    "buttonLink": "/projects"
+  },
+  "about": {
+      "title": "About",
+      "text": "We are an international architecture firm specializing in modern sustainable buildings. Our mission is to create spaces that inspire and endure.",
+      "images": [
+        "assets/images/main-about1.svg",
+        "assets/images/main-about2.svg",
+        "assets/images/main-about3.svg"
+      ],
+      "buttonLabel": "Learn More"
+    },
+    "focus": [
+      {
+        "id": "1",
+        "title": "Main Focus",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."
+      },
+      {
+        "id": "2",
+        "title": "Mission Statement",
+        "description": "Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet."
+      }
+    ]
+}
