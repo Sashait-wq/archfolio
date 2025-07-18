@@ -1,0 +1,17 @@
+<section class="focus-section">
+  <div class="focus-section__container">
+    <h2 class="focus-section__title">{{ focus | joinTitles }}</h2>
+
+    <div class="focus-section__items">
+      @for (item of focus; track item.id) {
+        <div class="focus-section__item">
+          <span class="focus-section__item-id">{{ item.id }}</span>
+
+          <div class="focus-section__item-description">
+            <p>{{ item.description }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
