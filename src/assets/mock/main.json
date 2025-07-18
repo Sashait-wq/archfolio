@@ -18,12 +18,16 @@
   "about": {
       "title": "About",
       "text": "We are an international architecture firm specializing in modern sustainable buildings. Our mission is to create spaces that inspire and endure.",
-      "images": [
-        "assets/images/main-about1.svg",
-        "assets/images/main-about2.svg",
-        "assets/images/main-about3.svg"
-      ],
-      "buttonLabel": "Learn More"
+      "images": {
+        "urls": [
+        "assets/images/main/main-about1.svg",
+        "assets/images/main/main-about2.svg",
+        "assets/images/main/main-about3.svg"
+        ],
+        "alt": "Modern architectural buildings shown as part of the About section to represent innovation and design philosophy"
+      },
+      "buttonLabel": "Learn More",
+      "buttonLink": "/certifications"
     },
     "focus": [
       {

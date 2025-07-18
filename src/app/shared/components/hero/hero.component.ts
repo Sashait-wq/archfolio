@@ -3,10 +3,11 @@ import { Images, MainHero } from '../../../core/interfaces/main.model';
 import { MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-hero',
-  imports: [MatIcon, MatIconButton, RouterLink],
+  imports: [MatIcon, MatIconButton, RouterLink, NgIf],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })

@@ -1,0 +1,21 @@
+<section class="main-about" *ngIf="about">
+  <div class="main-about__container">
+    <div class="main-about__images">
+      @for (url of about.images.urls; track $index) {
+        <div class="main-about__image">
+          <img [src]="url" [alt]="about.images.alt" />
+        </div>
+      }
+    </div>
+
+    <div class="main-about__text">
+      <h2 class="main-about__title">{{ about.title }}</h2>
+      <p class="main-about__information">{{ about.text }}</p>
+
+      <button type="button" class="main-about__btn" [routerLink]="about.buttonLink">
+        {{ about.buttonLabel }}
+        <mat-icon>arrow_forward</mat-icon>
+      </button>
+    </div>
+  </div>
+</section>

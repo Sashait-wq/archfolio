@@ -3,6 +3,11 @@ export interface Images {
   alt: string;
 }
 
+export interface AboutImages {
+  urls: string[];
+  alt: string;
+}
+
 export interface MainHero {
   title: string;
   subtitle: string;
@@ -14,8 +19,9 @@ export interface MainHero {
 export interface MainAbout {
   title: string;
   text: string;
-  images: string[];
+  images: AboutImages;
   buttonLabel: string;
+  buttonLink: string;
 }
 
 export interface MainFocus {
