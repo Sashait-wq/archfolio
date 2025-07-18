@@ -1,19 +1,24 @@
-interface MainHero {
+export interface Images {
+  url: string;
+  alt: string;
+}
+
+export interface MainHero {
   title: string;
   subtitle: string;
-  image: string;
+  images: Images[];
   buttonLabel: string;
   buttonLink: string;
 }
 
-interface MainAbout {
+export interface MainAbout {
   title: string;
   text: string;
   images: string[];
   buttonLabel: string;
 }
 
-interface MainFocus {
+export interface MainFocus {
   id: string;
   title: string;
   description: string;

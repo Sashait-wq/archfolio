@@ -3,12 +3,23 @@
 :root {
   --t-color-b: #000;
   --t-color-l: #494949;
+  --t-color-g: #b3b3b3;
 
   --bg-color-b: #000;
   --bg-color-f: #2c2c2c;
+  --bg-color-w: #ffff;
 
   --f-size-header: 1.5rem;
   --f-size-links: 1.2rem;
+  --f-size-text: 1rem;
+  --f-size-bigs: 2rem;
+
+  --padding-b: 1rem 2rem;
+  --bg-hover-b-w: #edebeb;
+
+  --gaps: 1rem;
+
+  --l-spacing: 0.1rem;
 }
 
 * {

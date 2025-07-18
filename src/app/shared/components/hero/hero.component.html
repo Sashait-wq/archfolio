@@ -1,0 +1,22 @@
+<div class="main-hero">
+  <div class="main-hero__left-content">
+    <div class="main-hero__text">
+      <h2 class="main-hero__title">{{ hero.title }}</h2>
+      <span class="main-hero__subtitle">{{ hero.subtitle }}</span>
+    </div>
+
+    <div class="main-hero__buttons">
+      <button (click)="prev()" mat-icon-button><mat-icon>arrow_back</mat-icon></button>
+      <button (click)="next()" mat-icon-button><mat-icon>arrow_forward</mat-icon></button>
+    </div>
+
+    <span class="main-hero__pagination">{{ index }} / {{ hero.images.length }}</span>
+  </div>
+
+  <div class="main-hero__image">
+    <img [src]="currentImage.url" [alt]="currentImage.alt" />
+    <button class="main-hero__btn" [routerLink]="hero.buttonLink">
+      View Project <mat-icon>arrow_forward</mat-icon>
+    </button>
+  </div>
+</div>

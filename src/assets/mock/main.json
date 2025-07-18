@@ -2,7 +2,16 @@
   "hero": {
     "title": "Project",
     "subtitle": "Lorum",
-    "image": "assets/images/projects/project1.jpg",
+    "images": [
+      {
+        "url": "assets/images/projects/project1.jpg",
+        "alt": "Facade of a modern residential building with panoramic windows"
+      },
+      {
+        "url": "assets/images/projects/project3.jpg",
+        "alt": "Interior Spacious office space with minimalist design"
+      }
+      ],
     "buttonLabel": "Explore Projects",
     "buttonLink": "/projects"
   },
