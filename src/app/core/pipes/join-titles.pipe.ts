@@ -11,9 +11,9 @@ interface FocusItem {
 })
 export class JoinTitlesPipe implements PipeTransform {
   transform(value: FocusItem[], separator: string = ' / '): string {
-    return value
-      .filter((item) => item.title)
-      .map((item) => item.title)
-      .join(separator);
+    if (!Array.isArray(value)) {
+      return '';
+    }
+    return value.map((item) => item.title).join(separator);
   }
 }

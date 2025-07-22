@@ -69,20 +69,6 @@
         "style": "Scandinavian Modern",
         "fullDescription": "Suspended above street level, this library opens views to the fjord and cityscape. Natural wood and neutral tones dominate the interiors. Reading zones are complemented by rooftop gardens and sound-insulated study pods. The design encourages openness and community learning."
       }
-    },
-    {
-      "id": "6",
-      "title": "Concrete Cliff Retreat",
-      "description": "A private retreat built into a rocky hillside, blending brutalist architecture with panoramic nature views.",
-      "image": "assets/images/projects/project6.jpg",
-      "details": {
-        "location": "Santorini, Greece",
-        "year": "2022",
-        "client": "Art Collector's Estate",
-        "architect": "K-Studio",
-        "style": "Brutalist / Natural Integration",
-        "fullDescription": "Built directly into the cliff, this retreat uses raw concrete, stone, and glass to create a seamless dialogue with its environment. The structure is self-sufficient with rainwater harvesting and solar power. It houses a private gallery, infinity pool, and meditation terrace overlooking the sea."
-      }
     }
   ]
 }
