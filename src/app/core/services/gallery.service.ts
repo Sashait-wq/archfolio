@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BaseService } from './base.service';
-import { Gallery } from '../core/interfaces/gallery.model';
+import { Gallery } from '../interfaces/gallery.model';
 import { Observable } from 'rxjs';
 
 @Injectable({

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BaseService } from './base.service';
 import { Observable } from 'rxjs';
-import { Main } from '../core/interfaces/main.model';
+import { Main } from '../interfaces/main.model';
 
 @Injectable({
   providedIn: 'root'

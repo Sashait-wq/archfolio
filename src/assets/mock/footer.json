@@ -1,0 +1,25 @@
+{
+  "footer": {
+  "logo": {
+    "text": "DIGITAL PROJECT"
+  },
+  "navigation": [
+    { "label": "Main", "link": "/" },
+    { "label": "Gallery", "link": "/gallery" },
+    { "label": "Projects", "link": "/projects" },
+    { "label": "Certifications", "link": "/certifications" },
+    { "label": "Contacts", "link": "/contacts" }
+  ],
+  "contacts": {
+    "address": "1234 Sample Street, Austin Texas 78704",
+    "phone": "512.933.2222",
+    "email": "samplemail@gmail.com"
+  },
+  "social": [
+    { "icon": "facebook", "link": "https://facebook.com" },
+    { "icon": "twitter", "link": "https://twitter.com" },
+    { "icon": "linkedin", "link": "https://linkedin.com" },
+    { "icon": "pinterest", "link": "https://pinterest.com" }
+  ]
+  }
+}
