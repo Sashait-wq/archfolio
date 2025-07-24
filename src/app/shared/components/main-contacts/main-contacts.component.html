@@ -1,0 +1,89 @@
+<form class="main-contacts" [formGroup]="form">
+  <div class="main-contacts__container">
+    <h2 class="main-contacts__title">{{ contacts.title }}</h2>
+
+    <div class="main-contacts__content">
+      <div class="main-contacts__form">
+        <div class="main-contacts__item">
+          <label class="main-contacts__label">
+            <input
+              class="main-contacts__input"
+              type="text"
+              placeholder="Name"
+              formControlName="name"
+            />
+          </label>
+
+          @if (form.controls.name.invalid && form.controls.name.touched) {
+            @if (form.controls.name.hasError('required')) {
+              <small class="main-contacts__error">Name is required.</small>
+            }
+          }
+        </div>
+
+        <div class="main-contacts__item">
+          <label class="main-contacts__label">
+            <input
+              class="main-contacts__input"
+              type="text"
+              placeholder="Phone"
+              formControlName="phone"
+            />
+          </label>
+          @if (form.controls.phone.invalid && form.controls.phone.touched) {
+            @if (form.controls.phone.hasError('required')) {
+              <small class="main-contacts__error">Phone number is required.</small>
+            } @else if (form.controls.phone.hasError('pattern')) {
+              <small class="main-contacts__error">Phone number must be exactly 10 digits.</small>
+            }
+          }
+        </div>
+
+        <div class="main-contacts__item">
+          <label class="main-contacts__label">
+            <input
+              class="main-contacts__input"
+              type="text"
+              placeholder="Email"
+              formControlName="email"
+            />
+          </label>
+
+          @if (form.controls.email.invalid && form.controls.email.touched) {
+            @if (form.controls.email.hasError('required')) {
+              <small class="main-contacts__error">Email is required.</small>
+            } @else if (form.controls.email.hasError('email')) {
+              <small class="main-contacts__error">Invalid email format.</small>
+            }
+          }
+        </div>
+
+        <div class="main-contacts__item">
+          <label>
+            <input
+              class="main-contacts__input"
+              type="text"
+              placeholder="interested"
+              formControlName="interested"
+            />
+          </label>
+        </div>
+
+        <textarea
+          class="main-contacts__textarea"
+          placeholder="Message"
+          formControlName="message"
+        ></textarea>
+      </div>
+
+      <div class="main-contacts__image-wrapper">
+        <img class="main-contacts__image" [src]="contacts.image.url" [alt]="contacts.image.alt" />
+      </div>
+    </div>
+    <div class="main-contacts__btn-container">
+      <button type="submit" class="main-contacts__btn" [disabled]="!form.valid">
+        {{ contacts.buttonLabel }} <mat-icon>arrow_forward</mat-icon>
+      </button>
+    </div>
+  </div>
+</form>

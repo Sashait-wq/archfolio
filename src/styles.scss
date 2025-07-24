@@ -5,15 +5,23 @@
   --t-color-l: #494949;
   --t-color-g: #b3b3b3;
   --t-color-w: #ffff;
-
+  --t-color-error: #ff0000;
   --bg-color-b: #000;
   --bg-color-f: #2c2c2c;
   --bg-color-w: #ffff;
   --bg-color-show-w: #fbfbfb;
+  --bg-color-inputs: #eaeaea;
+
+  --bg-color-f-b: #474747;
+
+  --bg-color-icons: #515151;
+  --bg-color-hover-icons: #3c3c3c;
 
   --f-size-titles: 2rem;
   --f-size-links: 1.2rem;
   --f-size-text: 1.1rem;
+  --f-size-text-2: 1.4rem;
+  --f-size-error: 0.9375rem;
 
   --padding-b: 1rem 2rem;
   --bg-hover-b-w: #edebeb;
@@ -23,6 +31,7 @@
   --gaps-2: 2rem;
   --padding: 1rem;
   --padding-2: 2rem;
+  --padding-3: 3rem;
 
   --l-spacing: 0.1rem;
 }

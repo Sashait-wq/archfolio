@@ -1,3 +1,7 @@
+interface FooterLogo {
+  text: string;
+}
+
 interface FooterNavigation {
   label: string;
   link: string;
@@ -12,11 +16,13 @@ interface FooterContact {
 interface FooterSocial {
   icon: string;
   link: string;
+  alt: string;
 }
 
 export interface Footer {
-  text: string;
+  logo: FooterLogo;
   navigation: FooterNavigation[];
-  contact: FooterContact;
+  contacts: FooterContact;
   social: FooterSocial[];
+  copyright: string;
 }

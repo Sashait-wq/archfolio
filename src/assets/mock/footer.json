@@ -16,10 +16,11 @@
     "email": "samplemail@gmail.com"
   },
   "social": [
-    { "icon": "facebook", "link": "https://facebook.com" },
-    { "icon": "twitter", "link": "https://twitter.com" },
-    { "icon": "linkedin", "link": "https://linkedin.com" },
-    { "icon": "pinterest", "link": "https://pinterest.com" }
-  ]
+    { "icon": "assets/images/footer/facebook.svg", "link": "https://facebook.com", "alt": "Facebook" },
+    { "icon": "assets/images/footer/twitter.svg", "link": "https://twitter.com", "alt": "Twitter"},
+    { "icon": "assets/images/footer/linkedIn.svg", "link": "https://linkedin.com", "alt": "LinkedIn" },
+    { "icon": "assets/images/footer/pinterest.svg", "link": "https://pinterest.com", "alt": "Pinterest" }
+  ],
+    "copyright": "© 2021 All Rights Reserved"
   }
 }

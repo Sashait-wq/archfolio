@@ -9,22 +9,35 @@ import { Project } from '../../core/interfaces/project.model';
 import { MainProjectsComponent } from '../../shared/components/main-projects/main-projects.component';
 import { Observable } from 'rxjs';
 import { AsyncPipe, NgIf } from '@angular/common';
+import { Contacts } from '../../core/interfaces/contacts.model';
+import { ContactsService } from '../../core/services/contacts.service';
+import { MainContactsComponent } from '../../shared/components/main-contacts/main-contacts.component';
 
 @Component({
   selector: 'app-main',
-  imports: [HeroComponent, AboutComponent, FocusComponent, MainProjectsComponent, NgIf, AsyncPipe],
+  imports: [
+    HeroComponent,
+    AboutComponent,
+    FocusComponent,
+    MainProjectsComponent,
+    NgIf,
+    AsyncPipe,
+    MainContactsComponent
+  ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
 export class MainComponent implements OnInit {
   private mainService = inject(MainService);
-
   private projectService = inject(ProjectService);
+  private contactsService = inject(ContactsService);
 
   public mainHero!: MainHero;
   public mainAbout!: MainAbout;
   public mainFocus!: MainFocus[];
+
   public projects$: Observable<Project[]> = this.projectService.getProjects();
+  public MainContacts$: Observable<Contacts> = this.contactsService.getContacts();
 
   ngOnInit(): void {
     this.mainService.getMain().subscribe((response) => {
@@ -32,6 +45,7 @@ export class MainComponent implements OnInit {
       this.mainAbout = response.about;
       this.mainFocus = response.focus;
       console.log(this.mainFocus);
+      console.log(this.MainContacts$);
     });
   }
 }

@@ -12,10 +12,10 @@ export interface Contacts {
   errorMessage: string;
 }
 
-export interface ContactsForm {
+export interface FormContacts {
   name: string;
   phone: string;
   email: string;
-  Interested: string;
+  interested: string;
   message: string;
 }

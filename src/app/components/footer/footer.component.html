@@ -1,1 +1,52 @@
-<footer class="footer"></footer>
+<footer class="footer" *ngIf="information$ | async as information">
+  <div class="footer__information">
+    <h2 class="footer__logo">{{ information.logo.text }}</h2>
+
+    <div class="footer__navigation">
+      <h3 class="footer__title">Navigation</h3>
+      <div class="footer__navigation-links">
+        @for (nav of information.navigation; track nav) {
+          <a class="footer__navigation-link" [routerLink]="nav.link">{{ nav.label }}</a>
+        }
+      </div>
+    </div>
+
+    <div class="footer__contacts">
+      <h3 class="footer__title">Contacts</h3>
+      <div class="footer__contacts-information">
+        <a
+          class="footer__contact-link"
+          href="https://maps.google.com/?q=1234+Sample+Street,+Austin,+Texas+78704"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><mat-icon>location_on</mat-icon> {{ information.contacts.address }}</a
+        >
+        <a class="footer__contact-link" href="tel:3123332222" rel="noopener noreferrer"
+          ><mat-icon>phone</mat-icon> {{ information.contacts.phone }}</a
+        >
+        <a
+          class="footer__contact-link"
+          href="mailto:sampleemail@gmail.com"
+          rel="noopener noreferrer"
+        >
+          <mat-icon>email</mat-icon> {{ information.contacts.email }}</a
+        >
+      </div>
+    </div>
+
+    <div class="footer__social">
+      <h3 class="footer__title">Social Media</h3>
+      <div class="footer__social-icons">
+        @for (social of information.social; track social) {
+          <a [href]="social.link">
+            <img [src]="social.icon" [alt]="social.alt" />
+          </a>
+        }
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__copyright">
+    <span class="footer__note">{{ information.copyright }}</span>
+  </div>
+</footer>

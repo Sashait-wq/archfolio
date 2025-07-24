@@ -3,7 +3,7 @@
       "title": "Contact Us",
       "description": "Have questions or want to discuss a project? Reach out and our team will be happy to assist you.",
       "image": {
-        "url": "assets/images/contacts/contact.png",
+        "url": "assets/images/contacts/contacts.png",
         "alt": "Man talking on the phone representing contact section"
       },
       "buttonLabel": "Send Email",
