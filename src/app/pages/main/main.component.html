@@ -3,5 +3,9 @@
   <app-about [about]="mainAbout" />
   <app-focus [focus]="mainFocus" />
   <app-main-projects *ngIf="projects$ | async as projects" [projects]="projects" />
-  <app-main-contacts *ngIf="MainContacts$ | async as contacts" [contacts]="contacts" />
+  <app-main-contacts
+    *ngIf="MainContacts$ | async as contacts"
+    [contacts]="contacts"
+    (formSubmit)="postContacts($event)"
+  />
 </div>

@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FooterService } from '../../core/services/footer.service';
 import { Footer } from '../../core/interfaces/footer.model';
 import { AsyncPipe, NgIf } from '@angular/common';

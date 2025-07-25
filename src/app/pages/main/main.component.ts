@@ -9,9 +9,11 @@ import { Project } from '../../core/interfaces/project.model';
 import { MainProjectsComponent } from '../../shared/components/main-projects/main-projects.component';
 import { Observable } from 'rxjs';
 import { AsyncPipe, NgIf } from '@angular/common';
-import { Contacts } from '../../core/interfaces/contacts.model';
+import { Contacts, FormContacts } from '../../core/interfaces/contacts.model';
 import { ContactsService } from '../../core/services/contacts.service';
 import { MainContactsComponent } from '../../shared/components/main-contacts/main-contacts.component';
+import { Store } from '@ngrx/store';
+import { loadContact } from '../../store/contacts.action';
 
 @Component({
   selector: 'app-main',
@@ -31,6 +33,7 @@ export class MainComponent implements OnInit {
   private mainService = inject(MainService);
   private projectService = inject(ProjectService);
   private contactsService = inject(ContactsService);
+  private store = inject(Store);
 
   public mainHero!: MainHero;
   public mainAbout!: MainAbout;
@@ -47,5 +50,9 @@ export class MainComponent implements OnInit {
       console.log(this.mainFocus);
       console.log(this.MainContacts$);
     });
+  }
+
+  public postContacts(contact: FormContacts): void {
+    this.store.dispatch(loadContact({ contact }));
   }
 }
