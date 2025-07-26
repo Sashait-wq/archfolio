@@ -16,7 +16,6 @@ export class ContactsEffects {
         this.contactsService.postContacts(contact).pipe(
           tap((response) => localStorage.setItem('lastContactForm', JSON.stringify(response))),
           map((contact) => loadContactSuccess({ contact })),
-          tap(() => console.log('success')),
           catchError((error) => of(loadContactFailure({ error })))
         )
       )

@@ -14,6 +14,8 @@ import { ContactsService } from '../../core/services/contacts.service';
 import { MainContactsComponent } from '../../shared/components/main-contacts/main-contacts.component';
 import { Store } from '@ngrx/store';
 import { loadContact } from '../../store/contacts.action';
+import { selectContacts } from '../../store/contacts.selector';
+import { ModalService } from '../../core/services/modal.service';
 
 @Component({
   selector: 'app-main',
@@ -33,6 +35,7 @@ export class MainComponent implements OnInit {
   private mainService = inject(MainService);
   private projectService = inject(ProjectService);
   private contactsService = inject(ContactsService);
+  private modalService = inject(ModalService);
   private store = inject(Store);
 
   public mainHero!: MainHero;
@@ -49,6 +52,12 @@ export class MainComponent implements OnInit {
       this.mainFocus = response.focus;
       console.log(this.mainFocus);
       console.log(this.MainContacts$);
+    });
+
+    this.store.select(selectContacts).subscribe((response) => {
+      if (response) {
+        this.modalService.openSuccessModal();
+      }
     });
   }
 
