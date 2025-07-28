@@ -1,0 +1,28 @@
+<section class="gallery-grid">
+  <div class="gallery-grid__container">
+    <div class="gallery-grid__header">
+      <h2 class="gallery-grid__title">Photo</h2>
+      <span class="gallery-grid__subtitle">Gallery</span>
+    </div>
+
+    <div class="gallery-grid__images">
+      @for (image of images; track image.id) {
+        <div class="gallery-grid__image-wrapper">
+          <img [src]="image.image" [alt]="image.caption" class="gallery-grid__image" />
+        </div>
+      }
+    </div>
+
+    <div class="gallery-grid__pagination">
+      <span class="gallery-grid__index">{{ index }} / {{ total }}</span>
+      <div class="gallery-grid__btn-container">
+        <button (click)="onPrev()" mat-icon-button [disabled]="index === 1">
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+        <button (click)="onNext()" mat-icon-button [disabled]="index === total">
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

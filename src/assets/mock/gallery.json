@@ -44,6 +44,41 @@
       "id": "9",
       "image": "assets/images/gallery/rectangle9.svg",
       "caption": "Skyscraper and city observation tower"
+    },
+    {
+      "id": "10",
+      "image": "assets/images/gallery/rectangle1.svg",
+      "caption": "Lighthouse on the coast"
+    },
+    {
+      "id": "11",
+      "image": "assets/images/gallery/rectangle2.svg",
+      "caption": "Glass rooftop with plants"
+    },
+    {
+      "id": "12",
+      "image": "assets/images/gallery/rectangle3.svg",
+      "caption": "Red and white signal tower"
+    },
+    {
+      "id": "13",
+      "image": "assets/images/gallery/rectangle6.svg",
+      "caption": "European street with old towers"
+    },
+    {
+      "id": "14",
+      "image": "assets/images/gallery/rectangle7.svg",
+      "caption": "Modern building with white arches"
+    },
+    {
+      "id": "15",
+      "image": "assets/images/gallery/rectangle8.svg",
+      "caption": "Waterfront architectural palace"
+    },
+    {
+      "id": "16",
+      "image": "assets/images/gallery/rectangle9.svg",
+      "caption": "Skyscraper and city observation tower"
     }
   ]
 }

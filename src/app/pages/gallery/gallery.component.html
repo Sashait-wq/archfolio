@@ -1,1 +1,7 @@
-<p>gallery works!</p>
+<app-gallery-grid
+  [images]="visibleImages"
+  [index]="pages"
+  [total]="totalPages"
+  (next)="nextSlide()"
+  (prev)="prevSlide()"
+/>
