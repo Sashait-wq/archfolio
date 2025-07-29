@@ -3,71 +3,76 @@
     {
       "id": "1",
       "title": "Minimalist Residential Tower",
-      "description": "A luxurious minimalist villa designed with a balance of open space, light, and natural materials. Located in the hills with a panoramic view.",
+      "description": "A luxurious minimalist villa designed with a balance of open space, natural lighting, and sustainable materials. Surrounded by serene hills, the tower features seamless indoor-outdoor living and refined simplicity in every detail.",
       "image": "assets/images/projects/project1.jpg",
+      "alt": "Minimalist Residential Tower in Kyoto, Japan",
       "details": {
         "location": "Kyoto, Japan",
         "year": "2022",
         "client": "Private Owner",
         "architect": "ArchiNova Studio",
         "style": "Minimalism, Sustainable",
-        "fullDescription": "This residential tower stands as a symbol of elegant minimalism in the heart of the Japanese hills. Designed to merge indoor and outdoor spaces with floor-to-ceiling windows and eco-friendly materials, it prioritizes simplicity and balance. Solar panels and smart ventilation make it energy efficient while maintaining breathtaking views."
+        "fullDescription": "This residential tower stands as a symbol of elegant minimalism in the heart of the Japanese hills. Designed to embrace nature, it integrates floor-to-ceiling glass, open-plan interiors, and locally sourced wood and stone. Every room opens toward a garden or panoramic view, creating a peaceful retreat in the midst of natural beauty. Sustainability was central to the design — solar panels, rainwater harvesting, and natural ventilation systems reduce the building’s footprint while enhancing comfort."
       }
     },
     {
       "id": "2",
       "title": "Downtown Glass Skyscraper",
-      "description": "An innovative office building with a fully glass façade, promoting transparency and collaboration between teams.",
+      "description": "An iconic glass skyscraper redefining the skyline with its transparent structure, sustainable design, and fluid spaces. The tower maximizes daylight while reducing energy consumption and fosters collaboration in its open office layouts.",
       "image": "assets/images/projects/project2.jpg",
+      "alt": "Glass skyscraper in downtown Toronto, Canada",
       "details": {
         "location": "Toronto, Canada",
         "year": "2021",
         "client": "GlobalTech Inc.",
         "architect": "Skyline Architecture Group",
         "style": "High-Tech, Corporate",
-        "fullDescription": "This 40-story skyscraper redefines the urban skyline. Its reflective glass façade is both aesthetic and functional, enhancing natural light and reducing heat absorption. The building hosts co-working zones, eco terraces, and smart meeting pods for hybrid teams. LEED Platinum certified."
+        "fullDescription": "This 40-story skyscraper redefines the urban skyline with its fully glazed facade and energy-efficient core. The building hosts a network of open-plan offices, collaboration lounges, and sky gardens, encouraging creativity and movement. Smart lighting and automated shading systems adapt in real time, balancing comfort and efficiency. Positioned in the heart of Toronto's business district, the tower reflects the city’s growth while aiming for LEED Platinum certification."
       }
     },
     {
       "id": "3",
       "title": "Urban Conference Hall",
-      "description": "A multifunctional event space in the heart of the city with acoustic optimization, modern style, and eco-friendly solutions.",
+      "description": "A dynamic multi-functional space located in a bustling urban core, designed with superior acoustics, modular elements, and environmentally friendly systems. Perfect for hosting exhibitions, talks, and community gatherings at scale.",
       "image": "assets/images/projects/project3.jpg",
+      "alt": "Urban Conference Hall in Berlin, Germany",
       "details": {
         "location": "Berlin, Germany",
         "year": "2020",
         "client": "City Council of Berlin",
         "architect": "BauForm Lab",
         "style": "Contemporary, Brutalist",
-        "fullDescription": "Designed for flexibility, this hall can host conferences, exhibitions, and concerts. The concrete exterior is softened by large glass panels and living plant walls. Acoustic panels and movable walls allow for multiple spatial configurations. Energy use is optimized through geothermal heating."
+        "fullDescription": "Designed for flexibility, this conference hall can host events of various scales — from small workshops to international summits. The building includes retractable walls, tiered seating, advanced soundproofing, and intelligent lighting. A green rooftop garden provides an informal breakout space, while geothermal systems heat and cool the structure efficiently. The raw concrete exterior contrasts with the high-tech, modular interior, reflecting Berlin’s creative tension between history and progress."
       }
     },
     {
       "id": "4",
       "title": "Futuristic Business Center",
-      "description": "A curved architectural marvel designed to host startups and innovation labs. It combines aesthetics with cutting-edge engineering.",
+      "description": "A visionary business hub shaped with fluid, parametric curves and next-gen materials. Built to foster startups and innovators, the space features collaborative zones, bio-climatic façades, and immersive digital infrastructure.",
       "image": "assets/images/projects/project4.jpg",
+      "alt": "Futuristic Business Center in Dubai, UAE",
       "details": {
         "location": "Dubai, UAE",
         "year": "2023",
         "client": "Innovation Hub ME",
         "architect": "Morphogen Architects",
         "style": "Futurism, Parametric Design",
-        "fullDescription": "This project serves as a landmark for innovation. Its biomorphic shape symbolizes fluidity and movement, echoing the creative energy of the businesses inside. Wind tunnel tested and equipped with AI-powered energy systems, it's one of the most technologically advanced buildings in the region."
+        "fullDescription": "This project serves as a landmark for innovation and technological advancement in the Gulf region. Inspired by organic growth patterns, the architecture flows seamlessly between interior and exterior. The center includes startup incubators, smart meeting rooms with AR integration, and an AI-managed ventilation and lighting system. Vertical gardens and shaded courtyards enhance comfort in the desert climate. It stands as a futuristic response to the evolving needs of collaborative workspaces in a fast-changing digital world."
       }
     },
     {
       "id": "5",
       "title": "Elevated City Library",
-      "description": "A transparent public library raised above the street level to preserve ground-level green space and enhance urban flow.",
+      "description": "A transparent cultural landmark suspended above the urban streetscape, allowing public green space below while offering readers a light-filled, inspiring environment above. It's a blend of architecture and urban ecology.",
       "image": "assets/images/projects/project5.jpg",
+      "alt": "Elevated City Library in Oslo, Norway",
       "details": {
         "location": "Oslo, Norway",
         "year": "2019",
         "client": "City of Oslo",
         "architect": "NordArk",
         "style": "Scandinavian Modern",
-        "fullDescription": "Suspended above street level, this library opens views to the fjord and cityscape. Natural wood and neutral tones dominate the interiors. Reading zones are complemented by rooftop gardens and sound-insulated study pods. The design encourages openness and community learning."
+        "fullDescription": "Suspended above street level, this library opens views to the fjord while creating a public park below. Its glass facade provides transparency and a sense of openness, inviting people from all backgrounds to explore knowledge. Inside, warm timber finishes and natural light define quiet reading zones, media labs, and community rooms. Sustainability features include solar roofing, passive ventilation, and green walls. More than a library, it's a democratic space fostering education, interaction, and city identity."
       }
     }
   ]

@@ -1,0 +1,37 @@
+<section class="project">
+  <div class="project__container">
+    <div class="project__header">
+      <h2 class="project__title">Our</h2>
+      <span class="project__subtitle">Projects</span>
+    </div>
+
+    <div class="project__items">
+      @for (project of projects; track project.id) {
+        <div class="project__item">
+          <div class="project__image-wrapper">
+            <img [lazyLoad]="project.image" [alt]="project.alt" />
+          </div>
+          <div class="project__description">
+            <h3 class="project__description-title">{{ project.title }}</h3>
+            <p class="project__description-d">{{ project.description }}</p>
+            <button type="button" class="project__btn" routerLink="/">
+              View More <mat-icon>arrow_forward</mat-icon>
+            </button>
+          </div>
+        </div>
+      }
+    </div>
+
+    <div class="project__pagination">
+      <span class="project__index">{{ index }} / {{ total }}</span>
+      <div class="project__btn-container">
+        <button (click)="onPrev()" mat-icon-button [disabled]="index === 1">
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+        <button (click)="onNext()" mat-icon-button [disabled]="index === total">
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

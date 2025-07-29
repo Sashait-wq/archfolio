@@ -2,10 +2,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Gallery } from '../../../core/interfaces/gallery.model';
 import { MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
+import { LazyLoadImageDirective } from '../../directives/lazy-load-image.directive';
 
 @Component({
   selector: 'app-gallery-grid',
-  imports: [MatIconButton, MatIcon],
+  imports: [MatIconButton, MatIcon, LazyLoadImageDirective],
   templateUrl: './gallery-grid.component.html',
   styleUrl: './gallery-grid.component.scss'
 })

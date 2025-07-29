@@ -8,7 +8,7 @@
     <div class="gallery-grid__images">
       @for (image of images; track image.id) {
         <div class="gallery-grid__image-wrapper">
-          <img [src]="image.image" [alt]="image.caption" class="gallery-grid__image" />
+          <img [lazyLoad]="image.image" [alt]="image.caption" class="gallery-grid__image" />
         </div>
       }
     </div>
