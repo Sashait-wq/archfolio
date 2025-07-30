@@ -17,10 +17,10 @@ export class ProjectPreviewComponent {
   @Input() total!: number;
   @Output() next = new EventEmitter<void>();
   @Output() prev = new EventEmitter<void>();
-  @Output() project = new EventEmitter<Project>();
+  @Output() project = new EventEmitter<number>();
 
-  public viewMore(project: Project): void {
-    this.project.emit(project);
+  public viewMore(projectId: number): void {
+    this.project.emit(projectId);
   }
 
   public onNext(): void {

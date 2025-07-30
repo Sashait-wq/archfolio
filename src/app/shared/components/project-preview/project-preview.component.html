@@ -14,7 +14,13 @@
           <div class="project__description">
             <h3 class="project__description-title">{{ project.title }}</h3>
             <p class="project__description-d">{{ project.description }}</p>
-            <button type="button" class="project__btn" routerLink="/">
+            <button
+              type="button"
+              class="project__btn"
+              [routerLink]="['/projects', project.id]"
+              [queryParams]="{ name: project.title }"
+              (click)="viewMore(+project.id)"
+            >
               View More <mat-icon>arrow_forward</mat-icon>
             </button>
           </div>

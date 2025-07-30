@@ -2,6 +2,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { ProjectService } from '../../core/services/project.service';
 import { Project } from '../../core/interfaces/project.model';
 import { ProjectPreviewComponent } from '../../shared/components/project-preview/project-preview.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -10,6 +11,7 @@ import { ProjectPreviewComponent } from '../../shared/components/project-preview
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent implements OnInit {
+  private router = inject(Router);
   private projectService = inject(ProjectService);
 
   public projects: Project[] = [];
@@ -49,5 +51,9 @@ export class ProjectsComponent implements OnInit {
       this.currentIndex -= this.pageSize;
       this.updateVisibleProjects();
     }
+  }
+
+  public projectDetails(id: number): void {
+    this.router.navigate(['/projects', id]);
   }
 }

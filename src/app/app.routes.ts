@@ -25,6 +25,13 @@ export const routes: Routes = [
     component: ProjectsComponent
   },
   {
+    path: 'projects/:id',
+    loadComponent: () =>
+      import('./pages/project-details/project-details.component').then(
+        (m) => m.ProjectDetailsComponent
+      )
+  },
+  {
     path: 'certifications',
     component: CertificationsComponent
   },

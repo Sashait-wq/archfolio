@@ -1,0 +1,45 @@
+<section class="project-details">
+  <div class="project-details__container">
+    <h2 class="project-details__title">{{ project?.title }}</h2>
+
+    <div class="project-details__content">
+      <div class="project-details__image-wrapper">
+        <img [src]="project?.image" [alt]="project?.alt" />
+      </div>
+
+      <div class="project-details__description">
+        <div class="project-details__info">
+          <p class="project-details__info-item">
+            <span class="project-details__label">Location:</span>
+            {{ project?.details?.location }}
+          </p>
+          <p class="project-details__info-item">
+            <span class="project-details__label">Year:</span>
+            {{ project?.details?.year }}
+          </p>
+          <p class="project-details__info-item">
+            <span class="project-details__label">Client:</span>
+            {{ project?.details?.client }}
+          </p>
+          <p class="project-details__info-item">
+            <span class="project-details__label">Architect:</span>
+            {{ project?.details?.architect }}
+          </p>
+          <p class="project-details__info-item">
+            <span class="project-details__label">Style:</span>
+            {{ project?.details?.style }}
+          </p>
+        </div>
+
+        <p class="project-details__full-description">
+          {{ project?.details?.fullDescription }}
+        </p>
+        <div class="project-details__btn-container">
+          <button type="button" class="project-details__btn" routerLink="/projects">
+            Back <mat-icon>arrow_back</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
