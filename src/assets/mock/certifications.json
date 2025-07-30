@@ -1,0 +1,28 @@
+{
+  "certifications": [
+    {
+      "id": 1,
+      "title": "Architectural Blueprint Process Certification",
+      "description": "An official certification acknowledging our advanced proficiency in the complete architectural blueprint development cycle, including conceptual planning, technical drafting, and accurate documentation. This certification confirms our ability to produce detailed and regulation-compliant architectural blueprints that serve as the foundation for successful construction. Certified by the European Architecture Board after a rigorous evaluation of project submissions and technical design skills.",
+      "date": "2023-04-10",
+      "image": "assets/images/certifications/cert1.jpg",
+      "alt": "Architectural blueprint with drawing tools"
+    },
+    {
+      "id": 2,
+      "title": "Architecture Project Management Certificate",
+      "description": "This certificate recognizes our expertise in managing complex architectural projects from inception to completion. It highlights our team's ability to coordinate multidisciplinary teams on-site, ensure compliance with engineering standards, manage timelines, and resolve structural challenges. Issued by the Global Construction Institute, this certification confirms our leadership in efficient resource allocation and risk assessment within architectural environments.",
+      "date": "2022-12-05",
+      "image": "assets/images/certifications/cert2.jpg",
+      "alt": "Team of architects reviewing construction plans"
+    },
+    {
+      "id": 3,
+      "title": "Modern Design Standards Compliance",
+      "description": "Certification for consistent implementation of current international standards in modern architecture, sustainable building practices, and smart city design. The certification emphasizes our ability to integrate eco-friendly materials, cutting-edge technologies, and efficient space utilization in all our projects. Verified by the International Design Association, it underscores our commitment to innovation, aesthetics, and environmental responsibility in every phase of architectural development.",
+      "date": "2024-02-18",
+      "image": "assets/images/certifications/cert3.jpg",
+      "alt": "Architect signing and reviewing technical documents"
+    }
+  ]
+}

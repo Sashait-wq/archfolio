@@ -1,0 +1,26 @@
+<section class="certifications">
+  <div class="certifications__container">
+    <div class="certifications__header">
+      <h2 class="certifications__title">Our</h2>
+      <span class="certifications__subtitle">Projects</span>
+    </div>
+
+    <div class="certifications__items">
+      @for (certification of certifications; track certification.id) {
+        <div class="certifications__item">
+          <div class="certifications__image-wrapper">
+            <img [lazyLoad]="certification.image" [alt]="certification.alt" />
+          </div>
+          <div class="certifications__information">
+            <h3 class="certifications__info-title">{{ certification.title }}</h3>
+            <p class="certifications__info-item">
+              <span class="certifications__label">Date:</span>
+              {{ certification.date | date: 'MMM d, y' }}
+            </p>
+            <p class="certifications__info-description">{{ certification.description }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,1 +1,4 @@
-<p>certifications works!</p>
+<app-certification-card
+  *ngIf="certifications$ | async as certifications"
+  [certifications]="certifications"
+/>
