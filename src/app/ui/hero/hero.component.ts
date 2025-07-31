@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Images, MainHero } from '../../../core/interfaces/main.model';
+import { Images, MainHero } from '../../core/interfaces/main.model';
 import { MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';

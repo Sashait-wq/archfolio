@@ -15,4 +15,5 @@ import { Observable } from 'rxjs';
 export class FooterComponent {
   private footerService = inject(FooterService);
   public information$: Observable<Footer> = this.footerService.getFooter();
+  protected readonly encodeURIComponent = encodeURIComponent;
 }

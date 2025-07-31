@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CertificationsService } from '../../core/services/certifications.service';
 import { Certification } from '../../core/interfaces/certifications.model';
 import { Observable } from 'rxjs';
-import { CertificationCardComponent } from '../../shared/components/certification-card/certification-card.component';
+import { CertificationCardComponent } from '../../ui/certification-card/certification-card.component';
 import { AsyncPipe, NgIf } from '@angular/common';
 
 @Component({

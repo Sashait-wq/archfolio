@@ -1,0 +1,45 @@
+<section class="contacts">
+  <div class="contacts__container">
+    <div class="contacts__information">
+      <div class="contacts__titles">
+        <h2 class="contacts__title">Contact</h2>
+        <span class="contacts__subtitle">Information</span>
+      </div>
+
+      <div class="contacts__company-info">
+        <h3 class="contacts__company-name">{{ contacts?.companyName }}</h3>
+        <a
+          [href]="'https://maps.google.com/?q=' + encodeURIComponent(contacts?.address!)"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contacts__links"
+          ><mat-icon>location_on</mat-icon> {{ contacts?.address }}</a
+        >
+        <a [href]="'tel:' + contacts?.phone" rel="noopener noreferrer" class="contacts__links">
+          <mat-icon>phone</mat-icon> {{ contacts?.phone }}</a
+        >
+        <a [href]="'mailto:' + contacts?.email" rel="noopener noreferrer" class="contacts__links">
+          <mat-icon>email</mat-icon>{{ contacts?.email }}</a
+        >
+        @if (contacts?.showButton) {
+          <button type="button" class="contacts__btn">
+            Contact US
+            <mat-icon>arrow_forward</mat-icon>
+          </button>
+        }
+      </div>
+    </div>
+
+    <div class="contacts__map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d55144.253171200195!2d-97.80805120001492!3d30.250880853709408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s1234%20Sample%20Street%2C%20Austin%2C%20Texas%2078704!5e0!3m2!1suk!2sua!4v1753994236349!5m2!1suk!2sua"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>

@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { Certification } from '../../../core/interfaces/certifications.model';
+import { Certification } from '../../core/interfaces/certifications.model';
 import { DatePipe } from '@angular/common';
-import { LazyLoadImageDirective } from '../../directives/lazy-load-image.directive';
+import { LazyLoadImageDirective } from '../../shared/directives/lazy-load-image.directive';
 
 @Component({
   selector: 'app-certification-card',

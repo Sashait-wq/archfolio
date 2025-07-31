@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { GalleryService } from '../../core/services/gallery.service';
 import { Gallery } from '../../core/interfaces/gallery.model';
-import { GalleryGridComponent } from '../../shared/components/gallery-grid/gallery-grid.component';
+import { GalleryGridComponent } from '../../ui/gallery-grid/gallery-grid.component';
 
 @Component({
   selector: 'app-gallery',

@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Contacts, FormContacts } from '../../../core/interfaces/contacts.model';
+import { Contacts, FormContacts } from '../../core/interfaces/contacts.model';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { FormModel } from '../../../core/interfaces/formContacts.model';
+import { FormModel } from '../../core/interfaces/formContacts.model';
 import { MatIcon } from '@angular/material/icon';
 
 @Component({

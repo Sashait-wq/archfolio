@@ -4,6 +4,7 @@
   width: 100%;
   height: 100vh;
   background: var(--bg-color-w);
+  gap: var(--gaps-2);
 
   &__content {
     width: 100%;
@@ -11,7 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 120px;
+    gap: var(--gaps-2);
   }
 
   &__header,

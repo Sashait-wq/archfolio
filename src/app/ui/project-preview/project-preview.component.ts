@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Project } from '../../../core/interfaces/project.model';
-import { LazyLoadImageDirective } from '../../directives/lazy-load-image.directive';
+import { Project } from '../../core/interfaces/project.model';
+import { LazyLoadImageDirective } from '../../shared/directives/lazy-load-image.directive';
 import { MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';

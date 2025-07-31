@@ -16,17 +16,20 @@
       <div class="footer__contacts-information">
         <a
           class="footer__contact-link"
-          href="https://maps.google.com/?q=1234+Sample+Street,+Austin,+Texas+78704"
+          [href]="'https://maps.google.com/?q=' + encodeURIComponent(information.contacts.address)"
           target="_blank"
           rel="noopener noreferrer"
           ><mat-icon>location_on</mat-icon> {{ information.contacts.address }}</a
         >
-        <a class="footer__contact-link" href="tel:3123332222" rel="noopener noreferrer"
+        <a
+          class="footer__contact-link"
+          [href]="'tel:' + information.contacts.phone"
+          rel="noopener noreferrer"
           ><mat-icon>phone</mat-icon> {{ information.contacts.phone }}</a
         >
         <a
           class="footer__contact-link"
-          href="mailto:sampleemail@gmail.com"
+          [href]="'mailto:' + information.contacts.email"
           rel="noopener noreferrer"
         >
           <mat-icon>email</mat-icon> {{ information.contacts.email }}</a

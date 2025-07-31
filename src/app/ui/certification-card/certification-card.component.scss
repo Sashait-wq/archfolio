@@ -1,13 +1,13 @@
-.project {
+.certifications {
   display: flex;
   justify-content: center;
 
   &__container {
     display: flex;
     flex-direction: column;
+    gap: var(--gaps-2);
     max-width: 1440px;
     width: 100%;
-    gap: var(--gaps-2);
   }
 
   &__header {
@@ -16,14 +16,14 @@
   }
 
   &__title {
-    font-size: var(--f-size-titles);
+    font-size: var(--f-size-titles-2);
     color: var(--t-color-g);
     letter-spacing: var(--l-spacing);
     font-weight: 300;
   }
 
   &__subtitle {
-    font-size: var(--f-size-titles);
+    font-size: var(--f-size-titles-2);
     color: var(--t-color-b);
     letter-spacing: var(--l-spacing);
     font-weight: 600;
@@ -38,6 +38,7 @@
   &__item {
     display: flex;
     background: var(--bg-color-show-w);
+    flex-wrap: wrap;
   }
 
   &__image-wrapper {
@@ -60,62 +61,40 @@
     }
   }
 
-  &__description {
+  &__information {
     display: flex;
     flex-direction: column;
     padding: var(--padding-2);
-    justify-content: space-between;
     align-items: flex-start;
+    gap: var(--gaps);
   }
 
-  &__description-title {
+  &__info-title {
     font-size: var(--f-size-titles);
     color: var(--t-color-g);
     letter-spacing: var(--l-spacing);
     font-weight: 300;
   }
 
-  &__description-d {
+  &__info-item {
     font-size: var(--f-size-text);
+    line-height: 1.5;
+    letter-spacing: var(--l-spacing);
+  }
+
+  &__label {
+    font-weight: 500;
+    color: var(--t-color-l);
+    margin-right: var(--margin);
+  }
+
+  &__info-description {
+    font-size: var(--f-size-text);
+    line-height: 1.5;
     color: var(--t-color-b);
     letter-spacing: var(--l-spacing);
-    line-height: 1.5;
+    font-weight: 500;
+    max-width: 650px;
     text-align: justify;
-    max-width: 600px;
-  }
-
-  &__btn {
-    display: flex;
-    align-items: center;
-    gap: var(--gaps);
-    padding: var(--padding-b);
-    background: var(--bg-color-w);
-    border: none;
-    outline: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-transform: uppercase;
-    letter-spacing: var(--l-spacing);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-
-    &:hover {
-      background: var(--bg-hover-b-w);
-    }
-  }
-
-  &__pagination {
-    display: flex;
-    align-items: center;
-    gap: var(--gaps-2);
-  }
-
-  &__index {
-    font-size: var(--f-size-titles);
-    color: var(--t-color-g);
-  }
-
-  &__btn-container {
-    display: flex;
-    gap: var(--gaps);
   }
 }

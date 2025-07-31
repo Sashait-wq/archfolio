@@ -1,17 +1,17 @@
 import { Component, inject, OnDestroy, OnInit } from '@angular/core';
-import { HeroComponent } from '../../shared/components/hero/hero.component';
+import { HeroComponent } from '../../ui/hero/hero.component';
 import { MainService } from '../../core/services/main.service';
 import { MainAbout, MainFocus, MainHero } from '../../core/interfaces/main.model';
-import { AboutComponent } from '../../shared/components/about/about.component';
-import { FocusComponent } from '../../shared/components/focus/focus.component';
+import { AboutComponent } from '../../ui/about/about.component';
+import { FocusComponent } from '../../ui/focus/focus.component';
 import { ProjectService } from '../../core/services/project.service';
 import { Project } from '../../core/interfaces/project.model';
-import { MainProjectsComponent } from '../../shared/components/main-projects/main-projects.component';
+import { MainProjectsComponent } from '../../ui/main-projects/main-projects.component';
 import { Observable, Subject, takeUntil } from 'rxjs';
 import { AsyncPipe, NgIf } from '@angular/common';
 import { Contacts, FormContacts } from '../../core/interfaces/contacts.model';
 import { ContactsService } from '../../core/services/contacts.service';
-import { MainContactsComponent } from '../../shared/components/main-contacts/main-contacts.component';
+import { MainContactsComponent } from '../../ui/main-contacts/main-contacts.component';
 import { Store } from '@ngrx/store';
 import { loadContact } from '../../store/contacts.action';
 import { selectContacts } from '../../store/contacts.selector';
@@ -45,7 +45,7 @@ export class MainComponent implements OnInit, OnDestroy {
   public mainFocus!: MainFocus[];
 
   public projects$: Observable<Project[]> = this.projectService.getProjects();
-  public MainContacts$: Observable<Contacts> = this.contactsService.getContacts();
+  public MainContacts$: Observable<Contacts> = this.contactsService.getContactUs();
 
   ngOnInit(): void {
     this.mainService

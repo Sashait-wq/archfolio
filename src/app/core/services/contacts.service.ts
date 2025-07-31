@@ -7,11 +7,11 @@ import { Contacts, FormContacts } from '../interfaces/contacts.model';
   providedIn: 'root'
 })
 export class ContactsService extends BaseService {
-  public getContacts(): Observable<Contacts> {
-    return this.get('contacts.json').pipe(map((data) => data.contacts));
+  public getContactUs(): Observable<Contacts> {
+    return this.get('contact-us.json').pipe(map((data) => data.contacts));
   }
 
-  public postContacts(contact: FormContacts): Observable<FormContacts> {
+  public postContactsUs(contact: FormContacts): Observable<FormContacts> {
     return this.post(contact);
   }
 }

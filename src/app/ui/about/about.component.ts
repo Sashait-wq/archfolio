@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MainAbout } from '../../../core/interfaces/main.model';
+import { MainAbout } from '../../core/interfaces/main.model';
 import { MatIcon } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
 import { NgIf } from '@angular/common';

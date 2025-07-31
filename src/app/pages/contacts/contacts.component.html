@@ -1,1 +1,1 @@
-<p>contacts works!</p>
+<app-contact-card *ngIf="contactsPage$ | async as contacts" [contacts]="contacts" />

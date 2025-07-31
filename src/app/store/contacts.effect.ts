@@ -13,7 +13,7 @@ export class ContactsEffects {
     return this.actions$.pipe(
       ofType(loadContact),
       switchMap(({ contact }) =>
-        this.contactsService.postContacts(contact).pipe(
+        this.contactsService.postContactsUs(contact).pipe(
           tap((response) => localStorage.setItem('lastContactForm', JSON.stringify(response))),
           map((contact) => loadContactSuccess({ contact })),
           catchError((error) => of(loadContactFailure({ error })))

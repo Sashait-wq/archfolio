@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Project } from '../../../core/interfaces/project.model';
+import { Project } from '../../core/interfaces/project.model';
 import { MatIcon } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
 

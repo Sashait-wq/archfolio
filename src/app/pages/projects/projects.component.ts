@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ProjectService } from '../../core/services/project.service';
 import { Project } from '../../core/interfaces/project.model';
-import { ProjectPreviewComponent } from '../../shared/components/project-preview/project-preview.component';
+import { ProjectPreviewComponent } from '../../ui/project-preview/project-preview.component';
 import { Router } from '@angular/router';
 
 @Component({
