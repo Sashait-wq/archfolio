@@ -16,7 +16,7 @@
 
     <div class="main-hero__image">
       <img [src]="currentImage.url" [alt]="currentImage.alt" />
-      <button type="button" class="main-hero__btn" [routerLink]="hero.buttonLink">
+      <button type="button" class="main-hero__btn" [routerLink]="['/projects', currentId]">
         View Project <mat-icon>arrow_forward</mat-icon>
       </button>
     </div>

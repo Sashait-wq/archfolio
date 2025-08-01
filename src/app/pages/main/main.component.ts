@@ -55,8 +55,6 @@ export class MainComponent implements OnInit, OnDestroy {
         this.mainHero = response.hero;
         this.mainAbout = response.about;
         this.mainFocus = response.focus;
-        console.log(this.mainFocus);
-        console.log(this.MainContacts$);
       });
 
     this.store
@@ -67,6 +65,14 @@ export class MainComponent implements OnInit, OnDestroy {
           this.modalService.openSuccessModal();
         }
       });
+
+    this.projects$.pipe(takeUntil(this.destroyed$)).subscribe((response) => {
+      this.mainHero.images = response.slice(0, 2).map((image) => ({
+        id: image.id,
+        url: image.image,
+        alt: image.alt
+      }));
+    });
   }
 
   public postContacts(contact: FormContacts): void {

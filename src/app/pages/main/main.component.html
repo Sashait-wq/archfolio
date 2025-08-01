@@ -1,5 +1,5 @@
 <div class="main">
-  <app-hero [hero]="mainHero" />
+  <app-hero *ngIf="mainHero?.images?.length" [hero]="mainHero" />
   <app-about [about]="mainAbout" />
   <app-focus [focus]="mainFocus" />
   <app-main-projects *ngIf="projects$ | async as projects" [projects]="projects" />
