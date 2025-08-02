@@ -77,7 +77,11 @@
       </div>
 
       <div class="main-contacts__image-wrapper">
-        <img class="main-contacts__image" [src]="contacts.image.url" [alt]="contacts.image.alt" />
+        <img
+          class="main-contacts__image"
+          [lazyLoad]="contacts.image.url"
+          [alt]="contacts.image.alt"
+        />
       </div>
     </div>
     <div class="main-contacts__btn-container">

@@ -10,7 +10,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: var(--gaps-2) 0;
+    padding: var(--padding-2);
+    gap: var(--gaps-2);
   }
 
   &__logo {
@@ -94,5 +95,15 @@
     color: var(--t-color-g);
     font-size: var(--f-size-text);
     font-weight: var(--fw-bold);
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
 }

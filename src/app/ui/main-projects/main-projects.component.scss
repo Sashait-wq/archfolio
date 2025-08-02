@@ -7,7 +7,8 @@
     flex-direction: column;
     max-width: 1440px;
     width: 100%;
-    gap: var(--gaps);
+    gap: var(--gaps-2);
+    padding: var(--padding);
   }
 
   &__title {
@@ -72,6 +73,46 @@
 
     &:hover {
       background: var(--bg-hover-b-b);
+    }
+  }
+}
+
+@media (max-width: 1468.8px) {
+  .main-projects {
+    &__btn-container {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1224px) {
+  .main-projects {
+    &__item {
+      max-width: 400px;
+      width: 100%;
+
+      &:nth-child(n + 3) {
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-projects {
+    &__container {
+      align-items: center;
+    }
+
+    &__items {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: flex-start;
+      padding-bottom: 1rem;
+
+      & > * {
+        flex: 0 0 auto;
+      }
     }
   }
 }

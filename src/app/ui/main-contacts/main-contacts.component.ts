@@ -3,10 +3,11 @@ import { Contacts, FormContacts } from '../../core/interfaces/contacts.model';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { FormModel } from '../../core/interfaces/formContacts.model';
 import { MatIcon } from '@angular/material/icon';
+import { LazyLoadImageDirective } from '../../shared/directives/lazy-load-image.directive';
 
 @Component({
   selector: 'app-main-contacts',
-  imports: [ReactiveFormsModule, MatIcon],
+  imports: [ReactiveFormsModule, MatIcon, LazyLoadImageDirective],
   templateUrl: './main-contacts.component.html',
   styleUrl: './main-contacts.component.scss'
 })
@@ -24,5 +25,6 @@ export class MainContactsComponent {
 
   public onSubmit(): void {
     this.formSubmit.emit(this.form.value as FormContacts);
+    this.form.reset();
   }
 }

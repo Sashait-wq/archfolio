@@ -7,7 +7,8 @@
     flex-direction: column;
     max-width: 1440px;
     width: 100%;
-    gap: var(--gaps);
+    gap: var(--gaps-2);
+    padding: var(--padding);
   }
 
   &__title {
@@ -21,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    gap: var(--gaps);
   }
 
   &__item {
@@ -31,7 +32,7 @@
   }
 
   &__item-id {
-    font-size: 10rem;
+    font-size: 8rem;
     color: var(--t-color-g);
   }
 
@@ -42,5 +43,17 @@
     max-width: 500px;
     text-align: justify;
     letter-spacing: var(--l-spacing);
+  }
+}
+
+@media (max-width: 1024px) {
+  .focus-section {
+    &__container {
+      align-items: center;
+    }
+    &__items {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }

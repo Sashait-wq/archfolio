@@ -2,7 +2,7 @@
   <div class="header__container">
     <h1 class="header__title">Digital project</h1>
 
-    <nav>
+    <nav *ngIf="!isMobile">
       <ul class="header__nav">
         <li>
           <a class="header__nav-link" routerLink="/main" routerLinkActive="header__nav-link-active"
@@ -43,5 +43,16 @@
         </li>
       </ul>
     </nav>
+
+    <button mat-button [matMenuTriggerFor]="menu" *ngIf="isMobile">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/main">Main</button>
+      <button mat-menu-item routerLink="/gallery">Gallery</button>
+      <button mat-menu-item routerLink="/projects">Projects</button>
+      <button mat-menu-item routerLink="/certifications">Certifications</button>
+      <button mat-menu-item routerLink="/contacts">Contacts</button>
+    </mat-menu>
   </div>
 </header>

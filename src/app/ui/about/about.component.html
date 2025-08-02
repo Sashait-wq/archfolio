@@ -3,7 +3,7 @@
     <div class="main-about__images">
       @for (url of about.images.urls; track $index) {
         <div class="main-about__image">
-          <img [src]="url" [alt]="about.images.alt" />
+          <img [lazyLoad]="url" [alt]="about.images.alt" />
         </div>
       }
     </div>

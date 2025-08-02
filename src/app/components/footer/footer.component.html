@@ -3,7 +3,7 @@
     <h2 class="footer__logo">{{ information.logo.text }}</h2>
 
     <div class="footer__navigation">
-      <h3 class="footer__title">Navigation</h3>
+      <h3 class="footer__title">Navigation:</h3>
       <div class="footer__navigation-links">
         @for (nav of information.navigation; track nav) {
           <a class="footer__navigation-link" [routerLink]="nav.link">{{ nav.label }}</a>
@@ -12,7 +12,7 @@
     </div>
 
     <div class="footer__contacts">
-      <h3 class="footer__title">Contacts</h3>
+      <h3 class="footer__title">Contacts:</h3>
       <div class="footer__contacts-information">
         <a
           class="footer__contact-link"
@@ -38,7 +38,7 @@
     </div>
 
     <div class="footer__social">
-      <h3 class="footer__title">Social Media</h3>
+      <h3 class="footer__title">Social Media:</h3>
       <div class="footer__social-icons">
         @for (social of information.social; track social) {
           <a [href]="social.link">
